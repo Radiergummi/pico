@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Error 404</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          html, body {
+            margin: 0;
+            padding: 0;
+          }
+          
+          body {
+            font-family: 'Roboto', Helvetica, sans-serif;
+          }
+          
+          main {
+            margin: 30vh auto;
+            width: 50%
+          }
+          
+          main .error {
+          	display: inline-block;
+          	margin: 0;
+          	padding: 5px 8px;
+            background: #90EE90;
+            border: 1px solid rgba(0, 0, 0, .05);
+            border-radius: 5px;
+            font-family: 'Source Code Pro', monospace;
+          	font-size: 1.4rem;
+          	font-weight: 100;
+          	color: rgba(0,0,0,.75);
+          	text-shadow: 1px 1px rgba(255, 255, 255, .2)
+          }
+          
+          main .description {
+            text-indent: 4px;
+            font-weight: 100;
+            color: rgba(0,0,0,.5);
+          }
+        </style>
+  
+  		<!--
+  		- Unfortunately, Microsoft has added a clever new
+  		- "feature" to Internet Explorer. If the text of
+  		- an error's message is "too small", specifically
+  		- less than 512 bytes, Internet Explorer returns
+  		- its own error message. You can turn that off,
+  		- but it's pretty tricky to find switch called
+  		- "smart error messages". That means, of course,
+  		- that short error messages are censored by default.
+  		- IIS always returns error messages that are long
+  		- enough to make Internet Explorer happy. The
+  		- workaround is pretty simple: pad the error
+  		- message with a big comment like this to push it
+  		- over the five hundred and twelve bytes minimum.
+  		- Of course, that's exactly what you're reading
+  		- right now.
+  		-->
+
+    </head>
+    <body>
+        <main role="main">
+            <h1 class="error">Error 404</h1>
+            <h2 class="description">Page not found</h2>
+            <p>Debug information:</p>
+            <code>
+                {debugdata}
+            </code>
+        </main>
+    </body>
+</html>

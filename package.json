@@ -1,0 +1,22 @@
+{
+    "name": "pico",
+    "version": "0.0.1",
+    
+    "description": "A NodeJS version of the PHP framework Nano by rwarasaurus.",
+    "author": "Moritz Friedrich",
+    "homepage": "http://www.moritzfriedrich.com",
+    "license": "unlicense",
+    "repository": "http://github.moritzfriedrich.com",
+    "keywords": ["framework", "routing"],
+    "bugs": "bugs@9dev.de",
+
+    "engines": {
+        "node": ">=4.0"
+    },
+    "dependencies": {
+        "colors": "~1.1.2"
+    },
+    "bin": {
+        "pico-cli": "cli.js"
+    }
+}

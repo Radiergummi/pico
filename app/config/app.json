@@ -1,0 +1,14 @@
+{
+	"name": "test app",
+	"url": "muc.9dev.de:8181",
+	"env": "development",
+	
+	"server": {
+		"port": 8282
+	},
+	
+	"views": {
+	    "extension": ".html",
+	    "engine": "templatesjs"
+	}
+}
